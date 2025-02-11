@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack 4</title>
+</head>
+
+<body>
+
+    <script>
+
+        const creaTimer = (tempo) => {
+            return () => {
+                setTimeout(() => {
+                    console.log("Tempo scaduto!");
+                }, tempo);
+            };
+        };
+
+
+        const timer = creaTimer(10000);
+
+        timer();
+
+
+
+    </script>
+
+</body>
+
+</html>
