@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack 8 bonus</title>
+</head>
+
+<body>
+
+    <script>
+
+        const contoAllaRovescia = (numero) => {
+            let contatore = numero;
+
+
+            const intervallo = setInterval(() => {
+
+                if (contatore > 0) {
+                    console.log(contatore);
+                } else {
+                    console.log("Tempo scaduto!");
+                    clearInterval(intervallo);
+                }
+                contatore--;
+            }, 1000);
+        };
+
+        contoAllaRovescia(5);
+    </script>
+
+
+</body>
+
+</html>
