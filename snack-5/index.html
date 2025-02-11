@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack 5</title>
+</head>
+
+<body>
+    <script>
+
+        const stampaOgniSecondo = (messaggio) => {
+            const intervallo = setInterval(() => {
+                console.log(messaggio);
+            }, 1000);
+
+
+            return intervallo;
+        };
+
+
+        const stop = stampaOgniSecondo("Hey mela!");
+
+
+        setTimeout(() => {
+            clearInterval(stop);
+            console.log("Basta!");
+        }, 10000);
+
+
+    </script>
+</body>
+
+</html>
